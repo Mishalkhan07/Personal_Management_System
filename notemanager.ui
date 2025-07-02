@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NoteManager</class>
+ <widget class="QWidget" name="NoteManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Title:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="titleLineEdit"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Category:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="categoryComboBox"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Date:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="dateEdit">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addButton">
+       <property name="text">
+        <string>Add Note</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="editButton">
+       <property name="text">
+        <string>Edit Note</string>
+       </property>
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="contentTextEdit"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Search:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="searchLineEdit"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Category:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="searchCategoryComboBox"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="searchButton">
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteButton">
+       <property name="text">
+        <string>Delete Note</string>
+       </property>
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableView" name="notesTableView"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

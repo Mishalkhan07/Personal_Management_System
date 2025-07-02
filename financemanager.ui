@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FinanceManager</class>
+ <widget class="QWidget" name="FinanceManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>876</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Finance Manager</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(214, 214, 20);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="addTransactionLayout">
+     <item>
+      <widget class="QComboBox" name="typeComboBox">
+       <property name="styleSheet">
+        <string notr="true">BACKGROUND-COLOR: yellow;
+color: black;
+font-weight: bold;
+border: 0.5px solid rgb(148, 148, 148);
+padding: 5px;
+border-radius: 4px;
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Income</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Expense</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="descriptionLineEdit">
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(148, 148, 148);
+padding: 4px;
+border-radius: 4px;
+background-color: white;
+font-size: 13px;</string>
+       </property>
+       <property name="placeholderText">
+        <string>Description</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="amountDoubleSpinBox">
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(148, 148, 148);
+padding: 3px;
+border-radius: 3px;
+background-color: white;</string>
+       </property>
+       <property name="prefix">
+        <string>$</string>
+       </property>
+       <property name="maximum">
+        <double>999999.989999999990687</double>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="categoryComboBox">
+       <property name="styleSheet">
+        <string notr="true">BACKGROUND-COLOR: yellow;
+color: black;
+font-weight: bold;
+border: 0.5px solid rgb(148, 148, 148);
+padding: 4px;
+border-radius: 4px;
+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="dateEdit">
+       <property name="styleSheet">
+        <string notr="true">font-weight: bold;
+border: 0.5px solid rgb(148, 148, 148);
+padding: 4px;
+border-radius: 4px;
+background-color: white;
+
+</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="clearButton">
+       <property name="toolTip">
+        <string>Clear form fields</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">BACKGROUND-COLOR: yellow;
+color: black;
+font-weight: bold;
+border: 0.5px solid rgb(148, 148, 148);
+padding: 4px;
+border-radius: 4px;
+width: 40px;
+</string>
+       </property>
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addButton">
+       <property name="styleSheet">
+        <string notr="true">BACKGROUND-COLOR: yellow;
+color: black;
+font-weight: bold;
+border: 0.5px solid rgb(148, 148, 148);
+padding: 4px;
+border-radius: 4px;
+</string>
+       </property>
+       <property name="text">
+        <string>Add Transaction</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableView" name="transactionsTableView">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(226, 226, 226);
+border-radius: 8px;
+border: 1px solid black;
+background-image: url(:/images/ChatGPT Image May 2, 2025, 01_52_25 PM.png);</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QPushButton" name="deleteButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">BACKGROUND-COLOR: yellow;
+color: black;
+font-weight: bold;
+border: 0.5px solid rgb(148, 148, 148);
+padding: 5px;
+border-radius: 4px;</string>
+       </property>
+       <property name="text">
+        <string>Delete Transaction</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="styleSheet">
+        <string notr="true">BACKGROUND-COLOR: yellow;
+color: black;
+font-weight: bold;
+border: 0.5px solid rgb(148, 148, 148);
+padding: 5px;
+border-radius: 4px;
+</string>
+       </property>
+       <property name="text">
+        <string>From:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="fromDateEdit">
+       <property name="styleSheet">
+        <string notr="true">BACKGROUND-COLOR: white;
+color: black;
+font-weight: bold;
+border: 0.5px solid rgb(148, 148, 148);
+padding: 5px;
+border-radius: 4px;</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="styleSheet">
+        <string notr="true">BACKGROUND-COLOR: yellow;
+color: black;
+font-weight: bold;
+border: 0.5px solid rgb(148, 148, 148);
+padding: 5px;
+border-radius: 4px;
+</string>
+       </property>
+       <property name="text">
+        <string>To:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="toDateEdit">
+       <property name="styleSheet">
+        <string notr="true">BACKGROUND-COLOR: white;
+color: black;
+font-weight: bold;
+border: 0.5px solid rgb(148, 148, 148);
+padding: 5px;
+border-radius: 4px;</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="reportButton">
+       <property name="styleSheet">
+        <string notr="true">BACKGROUND-COLOR: blue;
+color: white;
+font-weight: bold;
+border: 0.5px solid rgb(148, 148, 148);
+padding: 6px;
+border-radius: 4px;
+font-size: 13px;</string>
+       </property>
+       <property name="text">
+        <string>Generate Report</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

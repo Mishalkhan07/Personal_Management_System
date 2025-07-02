@@ -1,0 +1,15 @@
+debug/main.o
+debug/mainwindow.o
+debug/user.o
+debug/taskmanager.o
+debug/calendarmanager.o
+debug/financemanager.o
+debug/notemanager.o
+debug/dbmanager.o
+debug/qrc_resources.o
+debug/moc_mainwindow.o
+debug/moc_user.o
+debug/moc_taskmanager.o
+debug/moc_calendarmanager.o
+debug/moc_financemanager.o
+debug/moc_notemanager.o

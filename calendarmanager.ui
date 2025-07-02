@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalendarManager</class>
+ <widget class="QWidget" name="CalendarManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QCalendarWidget" name="calendarWidget"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Event Title:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="titleLineEdit"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Date:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="eventDateEdit">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Time:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTimeEdit" name="eventTimeEdit"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addButton">
+       <property name="text">
+        <string>Add Event</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Description:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="descriptionTextEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="reminderCheckBox">
+     <property name="text">
+      <string>Set Reminder</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableView" name="eventsTableView"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="deleteButton">
+     <property name="text">
+      <string>Delete Event</string>
+     </property>
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

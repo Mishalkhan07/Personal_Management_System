@@ -1,0 +1,15 @@
+release/main.o
+release/mainwindow.o
+release/user.o
+release/taskmanager.o
+release/calendarmanager.o
+release/financemanager.o
+release/notemanager.o
+release/dbmanager.o
+release/qrc_resources.o
+release/moc_mainwindow.o
+release/moc_user.o
+release/moc_taskmanager.o
+release/moc_calendarmanager.o
+release/moc_financemanager.o
+release/moc_notemanager.o

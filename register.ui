@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Register</class>
+ <widget class="QDialog" name="Register">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Register</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Register New Account</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 18px; font-weight: bold;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="usernameLineEdit">
+     <property name="placeholderText">
+      <string>Username</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="passwordLineEdit">
+     <property name="placeholderText">
+      <string>Password</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="nameLineEdit">
+     <property name="placeholderText">
+      <string>Full Name</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDateEdit" name="dobDateEdit">
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="contactLineEdit">
+     <property name="placeholderText">
+      <string>Contact Number</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="registerButton">
+     <property name="text">
+      <string>Register</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="backButton">
+     <property name="text">
+      <string>Back to Login</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
