@@ -93,4 +93,4 @@ Edit
 ### 🔧 Steps to Build & Run
 1. Clone the repo:
    ```bash
-   git clone https://github.com/fatimaazfar4/Personal_Management_System.git
+   git clone (https://github.com/Mishalkhan07/Personal_Management_System.git)
